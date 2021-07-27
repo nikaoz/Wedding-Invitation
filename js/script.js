@@ -6,9 +6,10 @@
       $('.sakura-falling').sakura();
 })(jQuery);
 
-$(document).on('click', function(){
-    document.getElementById("my_audio").play();
-});
+//Play music by click
+//$(document).on('click', function(){
+//    document.getElementById("my_audio").play();
+//});
 
 // Set the date we're counting down to
 var countDownDate = new Date("Aug 21, 2021 13:50:00").getTime();
