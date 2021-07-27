@@ -67,6 +67,23 @@
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
       <script src='js/sakkura.js'></script>
       <script  src="./js/script.js"></script>
+      <script type="text/javascript">
+      "use strict";
+
+      function docReady(fn) {
+         // see if DOM is already available
+         if (document.readyState === "complete" || document.readyState === "interactive") {
+             // call on next available tick
+             setTimeout(fn, 1);
+         } else {
+             document.addEventListener("DOMContentLoaded", fn);
+        }
+     }    
+     docReady(function() {
+         history.replaceState({}, null, "/")
+     });
+     </script>
+
    </body>
 
 <!-- Built with love by Vinit Shahdeo, edit by Niklas Zurita-Ems -->
